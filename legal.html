@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Legal Notice | Sole Mio Apartments</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f0e6;color:#18302d}
+main{max-width:920px;margin:auto;padding:48px 22px}
+a{color:#1f6b63}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:34px}
+.lang{border:1px solid #bbb;background:white;padding:8px 12px;border-radius:999px;cursor:pointer}
+.card{background:white;padding:28px;border-radius:20px;margin:18px 0}
+h1{font-size:42px;margin:0 0 10px}h2{margin-top:28px}
+p,li{line-height:1.65;color:#52615e}
+[data-lang="de"]{display:none}body.de [data-lang="en"]{display:none}body.de [data-lang="de"]{display:initial}
+footer{margin-top:50px;border-top:1px solid #ddd;padding-top:20px}
+</style>
+<script>
+function toggleLang(){
+ document.body.classList.toggle('de');
+ document.documentElement.lang=document.body.classList.contains('de')?'de':'en';
+ document.getElementById('langBtn').textContent=document.body.classList.contains('de')?'EN':'DE';
+}
+</script>
+</head><body><main>
+<div class="top"><a href="index.html">← Sole Mio Apartments</a><button id="langBtn" class="lang" onclick="toggleLang()">DE</button></div>
+<h1><span data-lang="en">Legal Notice</span><span data-lang="de">Impressum</span></h1>
+<div class="card">
+<p><b>Sole Mio Apartments</b><br>
+<span data-lang="en">Operator:</span><span data-lang="de">Betreiber:</span> Gano Fici<br>
+Rugra #17, Ulcinj, Velika Plaža, 85360, Montenegro<br>
+Phone / WhatsApp: +1 408-834-9025<br>
+E-mail: contact@solemioulcinj.com<br>
+Website: solemio-apartments.com</p>
+</div>
+<div class="card">
+<h2><span data-lang="en">Registration information</span><span data-lang="de">Registrierungsangaben</span></h2>
+<p data-lang="en">The operator has stated that he has a U.S. tax number. This number is not published here until it is confirmed whether it is legally relevant to the operation of the accommodation in Montenegro. Any Montenegrin accommodation permit, tourism registration or Central Tourist Register number will be added once confirmed.</p>
+<p data-lang="de">Der Betreiber hat angegeben, eine US-Steuernummer zu besitzen. Diese wird hier vorerst nicht veröffentlicht, bis geklärt ist, ob sie rechtlich für den Betrieb der Unterkunft in Montenegro relevant ist. Eine montenegrinische Unterkunftsgenehmigung, touristische Registrierung oder Nummer aus dem Zentralen Tourismusregister wird ergänzt, sobald sie bestätigt ist.</p>
+</div>
+<footer><a href="privacy.html">Privacy / Datenschutz</a> · <a href="booking-terms.html">Booking Terms / Buchungsbedingungen</a></footer>
+</main></body></html>

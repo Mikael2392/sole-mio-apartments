@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Booking Terms | Sole Mio Apartments</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f0e6;color:#18302d}
+main{max-width:920px;margin:auto;padding:48px 22px}
+a{color:#1f6b63}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:34px}
+.lang{border:1px solid #bbb;background:white;padding:8px 12px;border-radius:999px;cursor:pointer}
+.card{background:white;padding:28px;border-radius:20px;margin:18px 0}
+h1{font-size:42px;margin:0 0 10px}h2{margin-top:28px}
+p,li{line-height:1.65;color:#52615e}
+[data-lang="de"]{display:none}body.de [data-lang="en"]{display:none}body.de [data-lang="de"]{display:initial}
+footer{margin-top:50px;border-top:1px solid #ddd;padding-top:20px}
+</style>
+<script>
+function toggleLang(){
+ document.body.classList.toggle('de');
+ document.documentElement.lang=document.body.classList.contains('de')?'de':'en';
+ document.getElementById('langBtn').textContent=document.body.classList.contains('de')?'EN':'DE';
+}
+</script>
+</head><body><main>
+<div class="top"><a href="index.html">← Sole Mio Apartments</a><button id="langBtn" class="lang" onclick="toggleLang()">DE</button></div>
+<h1><span data-lang="en">Booking Terms</span><span data-lang="de">Buchungsbedingungen</span></h1>
+<div class="card"><h2><span data-lang="en">Booking confirmation</span><span data-lang="de">Buchungsbestätigung</span></h2>
+<p data-lang="en">A WhatsApp request is not yet a confirmed reservation. The reservation is confirmed only when Sole Mio Apartments confirms availability, dates and final price directly with the guest.</p>
+<p data-lang="de">Eine WhatsApp-Anfrage ist noch keine bestätigte Reservierung. Die Reservierung gilt erst als bestätigt, wenn Sole Mio Apartments Verfügbarkeit, Reisedaten und Endpreis direkt mit dem Gast bestätigt.</p></div>
+<div class="card"><h2><span data-lang="en">Prices</span><span data-lang="de">Preise</span></h2>
+<p data-lang="en">Prices shown as “from” prices are starting prices and may vary according to season, number of guests, length of stay and availability. The final confirmed price applies.</p>
+<p data-lang="de">Als „ab“-Preise angegebene Preise sind Startpreise und können je nach Saison, Gästezahl, Aufenthaltsdauer und Verfügbarkeit variieren. Maßgeblich ist der bestätigte Endpreis.</p></div>
+<div class="card"><h2><span data-lang="en">Cancellation and payment</span><span data-lang="de">Stornierung und Zahlung</span></h2>
+<p data-lang="en">Cancellation rules, deposits and payment conditions are confirmed individually by the property until a standard policy is published.</p>
+<p data-lang="de">Stornoregeln, Anzahlungen und Zahlungsbedingungen werden bis zur Veröffentlichung einheitlicher Bedingungen individuell durch die Unterkunft bestätigt.</p></div>
+<div class="card"><h2><span data-lang="en">Guest registration</span><span data-lang="de">Gästeanmeldung</span></h2>
+<p data-lang="en">Accommodation providers in Montenegro have obligations concerning registration and deregistration of foreign guests. Guests may therefore be asked for legally required information.</p>
+<p data-lang="de">Beherbergungsbetriebe in Montenegro haben Pflichten zur An- und Abmeldung ausländischer Gäste. Gäste können daher um gesetzlich erforderliche Angaben gebeten werden.</p></div>
+<footer><a href="legal.html">Legal / Impressum</a> · <a href="privacy.html">Privacy / Datenschutz</a></footer>
+</main></body></html>

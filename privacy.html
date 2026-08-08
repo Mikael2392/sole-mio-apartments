@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy | Sole Mio Apartments</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f0e6;color:#18302d}
+main{max-width:920px;margin:auto;padding:48px 22px}
+a{color:#1f6b63}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:34px}
+.lang{border:1px solid #bbb;background:white;padding:8px 12px;border-radius:999px;cursor:pointer}
+.card{background:white;padding:28px;border-radius:20px;margin:18px 0}
+h1{font-size:42px;margin:0 0 10px}h2{margin-top:28px}
+p,li{line-height:1.65;color:#52615e}
+[data-lang="de"]{display:none}body.de [data-lang="en"]{display:none}body.de [data-lang="de"]{display:initial}
+footer{margin-top:50px;border-top:1px solid #ddd;padding-top:20px}
+</style>
+<script>
+function toggleLang(){
+ document.body.classList.toggle('de');
+ document.documentElement.lang=document.body.classList.contains('de')?'de':'en';
+ document.getElementById('langBtn').textContent=document.body.classList.contains('de')?'EN':'DE';
+}
+</script>
+</head><body><main>
+<div class="top"><a href="index.html">← Sole Mio Apartments</a><button id="langBtn" class="lang" onclick="toggleLang()">DE</button></div>
+<h1><span data-lang="en">Privacy Policy</span><span data-lang="de">Datenschutzerklärung</span></h1>
+<div class="card"><h2><span data-lang="en">Controller</span><span data-lang="de">Verantwortlicher</span></h2>
+<p>Sole Mio Apartments · Gano Fici · Rugra #17, Ulcinj, Velika Plaža, 85360, Montenegro<br>contact@solemioulcinj.com · +1 408-834-9025</p></div>
+<div class="card"><h2><span data-lang="en">Direct booking requests</span><span data-lang="de">Direkte Buchungsanfragen</span></h2>
+<p data-lang="en">The booking form prepares a WhatsApp message containing the information entered by the guest, such as name, room type, stay dates, number of guests and message. The website itself does not store these booking details in its own database.</p>
+<p data-lang="de">Das Buchungsformular erstellt aus den eingegebenen Angaben eine WhatsApp-Nachricht, z. B. Name, Zimmerart, Reisedaten, Gästezahl und Nachricht. Die Website selbst speichert diese Buchungsdaten nicht in einer eigenen Datenbank.</p></div>
+<div class="card"><h2>WhatsApp</h2>
+<p data-lang="en">If you use WhatsApp, the communication is additionally processed by WhatsApp/Meta under their own privacy rules.</p>
+<p data-lang="de">Wenn WhatsApp genutzt wird, wird die Kommunikation zusätzlich durch WhatsApp/Meta nach deren eigenen Datenschutzregeln verarbeitet.</p></div>
+<div class="card"><h2><span data-lang="en">Hosting</span><span data-lang="de">Hosting</span></h2>
+<p data-lang="en">The website is hosted by Netlify. Technical access data may be processed to deliver and secure the website.</p>
+<p data-lang="de">Die Website wird über Netlify gehostet. Technische Zugriffsdaten können verarbeitet werden, um die Website bereitzustellen und abzusichern.</p></div>
+<div class="card"><h2><span data-lang="en">Your rights</span><span data-lang="de">Deine Rechte</span></h2>
+<p data-lang="en">For access, correction, deletion or other privacy questions, contact the operator. Montenegro's supervisory authority is the Agency for Personal Data Protection and Free Access to Information (AZLP).</p>
+<p data-lang="de">Für Auskunft, Berichtigung, Löschung oder andere Datenschutzfragen kannst du den Betreiber kontaktieren. Zuständige Aufsichtsbehörde in Montenegro ist die Agency for Personal Data Protection and Free Access to Information (AZLP).</p></div>
+<footer><a href="legal.html">Legal / Impressum</a> · <a href="booking-terms.html">Booking Terms</a></footer>
+</main></body></html>
