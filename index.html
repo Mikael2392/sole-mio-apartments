@@ -3,286 +3,1402 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Sole Mio Apartments | Ulcinj, Montenegro</title>
-  <meta name="description" content="Sole Mio Apartments in Ulcinj, Montenegro. Direct booking, rooms from €60 per night, near Velika Plaža." />
+
+  <meta
+    name="description"
+    content="Sole Mio Apartments in Ulcinj, Montenegro. Direct booking, rooms from €60 per night, near Velika Plaža."
+  />
+
   <meta name="robots" content="index,follow" />
+
   <meta property="og:title" content="Sole Mio Apartments | Ulcinj" />
-  <meta property="og:description" content="Direct booking near Velika Plaža in Ulcinj, Montenegro." />
+  <meta
+    property="og:description"
+    content="Direct booking near Velika Plaža in Ulcinj, Montenegro."
+  />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://solemio-apartments.com/" />
+
   <link rel="canonical" href="https://solemio-apartments.com/" />
+
   <style>
-    :root{
-      --ink:#112826; --sea:#1f6b63; --sand:#f5efe4; --cream:#fffaf3;
-      --gold:#e3af67; --white:#fff; --muted:#687773; --line:#dce4df;
+    :root {
+      --ink: #112826;
+      --sea: #1f6b63;
+      --sand: #f5efe4;
+      --cream: #fffaf3;
+      --gold: #e3af67;
+      --white: #fff;
+      --muted: #687773;
+      --line: #dce4df;
     }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--sand);color:var(--ink)}
-    a{text-decoration:none;color:inherit}
-    img{display:block;width:100%}
-    .topbar{
-      position:absolute;z-index:10;top:0;left:0;right:0;
-      display:flex;justify-content:space-between;align-items:center;
-      padding:24px 5%;color:white
+
+    * {
+      box-sizing: border-box;
     }
-    .brand{font-weight:900;letter-spacing:3px;font-size:24px}
-    .nav{display:flex;align-items:center;gap:18px;font-weight:800}
-    .lang{border:1px solid rgba(255,255,255,.65);border-radius:999px;padding:8px 12px;background:rgba(0,0,0,.18);color:white;cursor:pointer}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;background:var(--gold);color:#1d170f;font-weight:900;border:0;cursor:pointer}
-    .btn.dark{background:var(--ink);color:white}.btn.white{background:white;color:var(--ink)}
-    .hero{
-      min-height:92vh;position:relative;display:flex;align-items:end;color:white;
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: var(--sand);
+      color: var(--ink);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .topbar {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 5%;
+      color: white;
+    }
+
+    .brand {
+      font-weight: 900;
+      letter-spacing: 3px;
+      font-size: 24px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-weight: 800;
+    }
+
+    .lang {
+      border: 1px solid rgba(255, 255, 255, .65);
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: rgba(0, 0, 0, .18);
+      color: white;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: #1d170f;
+      font-weight: 900;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .btn.dark {
+      background: var(--ink);
+      color: white;
+    }
+
+    .btn.white {
+      background: white;
+      color: var(--ink);
+    }
+
+    .hero {
+      min-height: 92vh;
+      position: relative;
+      display: flex;
+      align-items: end;
+      color: white;
+
       background:
-        linear-gradient(180deg,rgba(5,24,22,.12),rgba(5,24,22,.90)),
+        linear-gradient(
+          180deg,
+          rgba(5, 24, 22, .12),
+          rgba(5, 24, 22, .90)
+        ),
         url('https://static.wixstatic.com/media/39d179_c23aad9f2a6a48eab64d42edc98b7fd2~mv2.jpg/v1/fill/w_1600,h_1100,al_c,q_90/Single%20room_edited.jpg')
-        center/cover no-repeat;
+        center / cover no-repeat;
     }
-    .hero-inner{position:relative;z-index:2;padding:0 5% 70px;max-width:940px}
-    .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:3px;font-weight:900;color:#f0cd96}
-    h1{font-size:clamp(54px,8vw,105px);line-height:.92;margin:18px 0}
-    .hero p{font-size:21px;line-height:1.6;color:#eef5f2;max-width:760px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-    section{padding:82px 5%}
-    .section-head{max-width:800px;margin-bottom:34px}
-    h2{font-size:clamp(38px,5vw,65px);line-height:1.05;margin:10px 0 18px}
-    p{font-size:18px;line-height:1.7;color:var(--muted)}
-    .room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .room-card{background:white;border-radius:26px;overflow:hidden;box-shadow:0 14px 35px rgba(0,0,0,.07)}
-    .room-card img{height:320px;object-fit:cover}
-    .room-body{padding:26px}
-    .room-title{display:flex;justify-content:space-between;gap:10px;align-items:start}
-    .room-title h3{font-size:29px;margin:0}
-    .price{font-weight:900;color:var(--sea);white-space:nowrap}
-    .pillrow{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
-    .pill{font-size:13px;font-weight:800;background:#edf4f1;padding:8px 11px;border-radius:999px}
-    .gallery{background:var(--ink);color:white}
-    .gallery p{color:#b9cbc6}
-    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .gallery-grid img{height:300px;object-fit:cover;border-radius:20px}
-    .amenities{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .amenity{background:white;padding:24px;border-radius:18px;font-weight:900}
-    .booking{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start}
-    .card{background:white;border-radius:26px;padding:32px;box-shadow:0 14px 35px rgba(0,0,0,.06)}
-    label{font-weight:800;display:block;margin:14px 0 7px}
-    input,select,textarea{width:100%;padding:14px;border:1px solid var(--line);border-radius:12px;font-size:16px}
-    textarea{min-height:100px;resize:vertical}
-    .reviews{background:#e2ece7}
-    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .review{background:white;padding:26px;border-radius:20px}
-    .review .stars{color:#d39131;font-size:20px}
-    footer{background:#091918;color:white;padding:30px 5%;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-    [data-lang="de"]{display:none}
-    body.de [data-lang="en"]{display:none}
-    body.de [data-lang="de"]{display:initial}
-    @media(max-width:900px){
-      .nav span{display:none}
-      .room-grid,.booking{grid-template-columns:1fr}
-      .gallery-grid{grid-template-columns:1fr 1fr}
-      .amenities{grid-template-columns:1fr 1fr}
-      .review-grid{grid-template-columns:1fr}
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      padding: 0 5% 70px;
+      max-width: 940px;
     }
-    @media(max-width:600px){
-      .hero{min-height:82vh}
-      .gallery-grid{grid-template-columns:1fr}
-      .gallery-grid img{height:260px}
-      .amenities{grid-template-columns:1fr 1fr}
-      h1{font-size:52px}
+
+    .eyebrow {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 900;
+      color: #f0cd96;
+    }
+
+    h1 {
+      font-size: clamp(54px, 8vw, 105px);
+      line-height: .92;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      font-size: 21px;
+      line-height: 1.6;
+      color: #eef5f2;
+      max-width: 760px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    section {
+      padding: 82px 5%;
+    }
+
+    .section-head {
+      max-width: 800px;
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      font-size: clamp(38px, 5vw, 65px);
+      line-height: 1.05;
+      margin: 10px 0 18px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .room-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .room-card {
+      background: white;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, .07);
+    }
+
+    .room-card img {
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .room-body {
+      padding: 26px;
+    }
+
+    .room-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .room-title h3 {
+      font-size: 29px;
+      margin: 0;
+    }
+
+    .price {
+      font-weight: 900;
+      color: var(--sea);
+      white-space: nowrap;
+    }
+
+    .pillrow {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 18px 0;
+    }
+
+    .pill {
+      font-size: 13px;
+      font-weight: 800;
+      background: #edf4f1;
+      padding: 8px 11px;
+      border-radius: 999px;
+    }
+
+    .gallery {
+      background: var(--ink);
+      color: white;
+    }
+
+    .gallery p {
+      color: #b9cbc6;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .gallery-grid img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .amenities {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .amenity {
+      background: white;
+      padding: 24px;
+      border-radius: 18px;
+      font-weight: 900;
+    }
+
+    .booking {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .card {
+      background: white;
+      border-radius: 26px;
+      padding: 32px;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, .06);
+    }
+
+    label {
+      font-weight: 800;
+      display: block;
+      margin: 14px 0 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .reviews {
+      background: #e2ece7;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .review {
+      background: white;
+      padding: 26px;
+      border-radius: 20px;
+    }
+
+    .review .stars {
+      color: #d39131;
+      font-size: 20px;
+    }
+
+    footer {
+      background: #091918;
+      color: white;
+      padding: 30px 5%;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    [data-lang="de"] {
+      display: none;
+    }
+
+    body.de [data-lang="en"] {
+      display: none;
+    }
+
+    body.de [data-lang="de"] {
+      display: initial;
+    }
+
+    @media (max-width: 900px) {
+      .nav span {
+        display: none;
+      }
+
+      .room-grid,
+      .booking {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .amenities {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        min-height: 82vh;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid img {
+        height: 260px;
+      }
+
+      .amenities {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      h1 {
+        font-size: 52px;
+      }
     }
   </style>
 </head>
+
 <body>
+
 <nav class="topbar">
-  <div class="brand">SOLE MIO</div>
-  <div class="nav">
-    <span><a href="#rooms"><span data-lang="en">Rooms</span><span data-lang="de">Zimmer</span></a></span>
-    <span><a href="#gallery"><span data-lang="en">Gallery</span><span data-lang="de">Galerie</span></a></span>
-    <span><a href="#book"><span data-lang="en">Book</span><span data-lang="de">Buchen</span></a></span>
-    <button class="lang" onclick="toggleLang()" id="langBtn">DE</button>
+
+  <div class="brand">
+    SOLE MIO
   </div>
+
+  <div class="nav">
+
+    <span>
+      <a href="#rooms">
+        <span data-lang="en">Rooms</span>
+        <span data-lang="de">Zimmer</span>
+      </a>
+    </span>
+
+    <span>
+      <a href="#gallery">
+        <span data-lang="en">Gallery</span>
+        <span data-lang="de">Galerie</span>
+      </a>
+    </span>
+
+    <span>
+      <a href="#book">
+        <span data-lang="en">Book</span>
+        <span data-lang="de">Buchen</span>
+      </a>
+    </span>
+
+    <button
+      class="lang"
+      onclick="toggleLang()"
+      id="langBtn"
+    >
+      DE
+    </button>
+
+  </div>
+
 </nav>
 
+
 <header class="hero">
+
   <div class="hero-inner">
-    <div class="eyebrow">Ulcinj · Montenegro · Velika Plaža</div>
-    <h1>
-      <span data-lang="en">A timeless stay by the Adriatic.</span>
-      <span data-lang="de">Zeitlos wohnen an der Adria.</span>
-    </h1>
-    <p data-lang="en">Comfortable rooms and apartments, balconies, air conditioning, free Wi-Fi and private parking — with direct booking.</p>
-    <p data-lang="de">Komfortable Zimmer und Apartments mit Balkon, Klimaanlage, kostenlosem WLAN und privaten Parkplätzen – direkt buchbar.</p>
-    <div class="actions">
-      <a class="btn" href="#book"><span data-lang="en">Book direct</span><span data-lang="de">Direkt buchen</span></a>
-      <a class="btn white" href="https://wa.me/14088349025" target="_blank">WhatsApp</a>
+
+    <div class="eyebrow">
+      Ulcinj · Montenegro · Velika Plaža
     </div>
+
+    <h1>
+      <span data-lang="en">
+        A timeless stay by the Adriatic.
+      </span>
+
+      <span data-lang="de">
+        Zeitlos wohnen an der Adria.
+      </span>
+    </h1>
+
+    <p data-lang="en">
+      Comfortable rooms and apartments, balconies,
+      air conditioning, free Wi-Fi and private parking —
+      with direct booking.
+    </p>
+
+    <p data-lang="de">
+      Komfortable Zimmer und Apartments mit Balkon,
+      Klimaanlage, kostenlosem WLAN und privaten
+      Parkplätzen – direkt buchbar.
+    </p>
+
+    <div class="actions">
+
+      <a class="btn" href="#book">
+        <span data-lang="en">Book direct</span>
+        <span data-lang="de">Direkt buchen</span>
+      </a>
+
+      <a
+        class="btn white"
+        href="https://wa.me/38268018077"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+      <a
+        class="btn white"
+        href="tel:+14088073001"
+      >
+        <span data-lang="en">Call</span>
+        <span data-lang="de">Anrufen</span>
+      </a>
+
+    </div>
+
   </div>
+
 </header>
 
+
 <section id="rooms">
+
   <div class="section-head">
-    <div class="eyebrow" style="color:var(--sea)">
-      <span data-lang="en">Accommodation</span><span data-lang="de">Unterkünfte</span>
+
+    <div
+      class="eyebrow"
+      style="color:var(--sea)"
+    >
+      <span data-lang="en">Accommodation</span>
+      <span data-lang="de">Unterkünfte</span>
     </div>
-    <h2><span data-lang="en">Choose your stay.</span><span data-lang="de">Wähle deine Unterkunft.</span></h2>
+
+    <h2>
+      <span data-lang="en">Choose your stay.</span>
+      <span data-lang="de">Wähle deine Unterkunft.</span>
+    </h2>
+
   </div>
+
 
   <div class="room-grid">
-    <article class="room-card">
-      <img src="https://static.wixstatic.com/media/39d179_c23aad9f2a6a48eab64d42edc98b7fd2~mv2.jpg/v1/fill/w_980,h_626,al_c,q_85/Single%20room_edited.jpg" alt="Single Room Sole Mio">
-      <div class="room-body">
-        <div class="room-title"><h3>Single Room</h3><div class="price">€60+</div></div>
-        <p data-lang="en">Perfect for couples seeking extra space, with a queen-sized bed, balcony and panoramic views.</p>
-        <p data-lang="de">Ideal für Paare, mit Queensize-Bett, Balkon und Panoramablick.</p>
-        <div class="pillrow"><span class="pill">2 pax</span><span class="pill">Balcony</span><span class="pill">Private bath</span></div>
-        <a class="btn dark" href="#book" onclick="setRoom('Single Room')"><span data-lang="en">Request this room</span><span data-lang="de">Dieses Zimmer anfragen</span></a>
-      </div>
-    </article>
+
+
+    <!-- SINGLE ROOM -->
 
     <article class="room-card">
-      <img src="https://static.wixstatic.com/media/39d179_92cc39c9e95849788943baba4076869e~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85/IMG_6481_edited.jpg" alt="Double Room Sole Mio">
+
+      <img
+        src="https://static.wixstatic.com/media/39d179_c23aad9f2a6a48eab64d42edc98b7fd2~mv2.jpg/v1/fill/w_980,h_626,al_c,q_85/Single%20room_edited.jpg"
+        alt="Single Room Sole Mio"
+      >
+
       <div class="room-body">
-        <div class="room-title"><h3>Double Room</h3><div class="price">€110+</div></div>
-        <p data-lang="en">A spacious two-bedroom room with balcony for families and groups looking for extra comfort and privacy.</p>
-        <p data-lang="de">Geräumiges Zimmer mit zwei Schlafbereichen und Balkon – ideal für Familien und Gruppen.</p>
-        <div class="pillrow"><span class="pill">2–4 pax</span><span class="pill">Balcony</span><span class="pill">Private bath</span></div>
-        <a class="btn dark" href="#book" onclick="setRoom('Double Room')"><span data-lang="en">Request this room</span><span data-lang="de">Dieses Zimmer anfragen</span></a>
+
+        <div class="room-title">
+
+          <h3>Single Room</h3>
+
+          <div class="price">
+            €60+
+          </div>
+
+        </div>
+
+        <p data-lang="en">
+          Perfect for couples seeking extra space,
+          with a queen-sized bed, balcony and
+          panoramic views.
+        </p>
+
+        <p data-lang="de">
+          Ideal für Paare, mit Queensize-Bett,
+          Balkon und Panoramablick.
+        </p>
+
+        <div class="pillrow">
+          <span class="pill">2 pax</span>
+          <span class="pill">Balcony</span>
+          <span class="pill">Private bath</span>
+        </div>
+
+        <a
+          class="btn dark"
+          href="#book"
+          onclick="setRoom('Single Room')"
+        >
+          <span data-lang="en">
+            Request this room
+          </span>
+
+          <span data-lang="de">
+            Dieses Zimmer anfragen
+          </span>
+        </a>
+
       </div>
+
     </article>
 
+
+    <!-- DOUBLE ROOM -->
+
     <article class="room-card">
-      <img src="https://static.wixstatic.com/media/39d179_445b53fbe0364817a130d15fd5964db2~mv2.jpg/v1/fill/w_980,h_640,al_c,q_85/Single%20room_edited.jpg" alt="Apartment Sole Mio">
+
+      <img
+        src="https://static.wixstatic.com/media/39d179_92cc39c9e95849788943baba4076869e~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85/IMG_6481_edited.jpg"
+        alt="Double Room Sole Mio"
+      >
+
       <div class="room-body">
-        <div class="room-title"><h3>Apartment</h3><div class="price">€120+</div></div>
-        <p data-lang="en">A comfortable apartment with extra space and balcony, ideal for families and extended stays.</p>
-        <p data-lang="de">Komfortables Apartment mit mehr Platz und Balkon – ideal für Familien und längere Aufenthalte.</p>
-        <div class="pillrow"><span class="pill">4–6 pax</span><span class="pill">Balcony</span><span class="pill">Private bath</span></div>
-        <a class="btn dark" href="#book" onclick="setRoom('Apartment')"><span data-lang="en">Request apartment</span><span data-lang="de">Apartment anfragen</span></a>
+
+        <div class="room-title">
+
+          <h3>Double Room</h3>
+
+          <div class="price">
+            €110+
+          </div>
+
+        </div>
+
+        <p data-lang="en">
+          A spacious two-bedroom room with balcony
+          for families and groups looking for
+          extra comfort and privacy.
+        </p>
+
+        <p data-lang="de">
+          Geräumiges Zimmer mit zwei Schlafbereichen
+          und Balkon – ideal für Familien und Gruppen.
+        </p>
+
+        <div class="pillrow">
+          <span class="pill">2–4 pax</span>
+          <span class="pill">Balcony</span>
+          <span class="pill">Private bath</span>
+        </div>
+
+        <a
+          class="btn dark"
+          href="#book"
+          onclick="setRoom('Double Room')"
+        >
+          <span data-lang="en">
+            Request this room
+          </span>
+
+          <span data-lang="de">
+            Dieses Zimmer anfragen
+          </span>
+        </a>
+
       </div>
+
     </article>
+
+
+    <!-- APARTMENT -->
+
+    <article class="room-card">
+
+      <img
+        src="https://static.wixstatic.com/media/39d179_445b53fbe0364817a130d15fd5964db2~mv2.jpg/v1/fill/w_980,h_640,al_c,q_85/Single%20room_edited.jpg"
+        alt="Apartment Sole Mio"
+      >
+
+      <div class="room-body">
+
+        <div class="room-title">
+
+          <h3>Apartment</h3>
+
+          <div class="price">
+            €120+
+          </div>
+
+        </div>
+
+        <p data-lang="en">
+          A comfortable apartment with extra
+          space and balcony, ideal for families
+          and extended stays.
+        </p>
+
+        <p data-lang="de">
+          Komfortables Apartment mit mehr Platz
+          und Balkon – ideal für Familien und
+          längere Aufenthalte.
+        </p>
+
+        <div class="pillrow">
+          <span class="pill">4–6 pax</span>
+          <span class="pill">Balcony</span>
+          <span class="pill">Private bath</span>
+        </div>
+
+        <a
+          class="btn dark"
+          href="#book"
+          onclick="setRoom('Apartment')"
+        >
+          <span data-lang="en">
+            Request apartment
+          </span>
+
+          <span data-lang="de">
+            Apartment anfragen
+          </span>
+        </a>
+
+      </div>
+
+    </article>
+
   </div>
+
 </section>
 
-<section id="gallery" class="gallery">
+
+<section
+  id="gallery"
+  class="gallery"
+>
+
   <div class="section-head">
-    <div class="eyebrow"><span data-lang="en">Gallery</span><span data-lang="de">Galerie</span></div>
-    <h2><span data-lang="en">See Sole Mio.</span><span data-lang="de">Sole Mio entdecken.</span></h2>
-    <p data-lang="en">Rooms, living areas, balconies and bathrooms from the property.</p>
-    <p data-lang="de">Zimmer, Wohnbereiche, Balkone und Badezimmer der Unterkunft.</p>
+
+    <div class="eyebrow">
+      <span data-lang="en">Gallery</span>
+      <span data-lang="de">Galerie</span>
+    </div>
+
+    <h2>
+      <span data-lang="en">See Sole Mio.</span>
+      <span data-lang="de">Sole Mio entdecken.</span>
+    </h2>
+
+    <p data-lang="en">
+      Rooms, living areas, balconies and
+      bathrooms from the property.
+    </p>
+
+    <p data-lang="de">
+      Zimmer, Wohnbereiche, Balkone und
+      Badezimmer der Unterkunft.
+    </p>
+
   </div>
+
+
   <div class="gallery-grid">
-    <img src="https://static.wixstatic.com/media/39d179_8dc35321d57a4b9698dae223401e3d45~mv2.jpg/v1/fill/w_980,h_639,al_c,q_85/IMG_6963_edited.jpg" alt="Room">
-    <img src="https://static.wixstatic.com/media/39d179_2a6e6fa2f0344f668d993b77a3a709db~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85/IMG_7934_edited.jpg" alt="Living area">
-    <img src="https://static.wixstatic.com/media/39d179_764e25282d714d91bd2a50b90cfd4689~mv2.avif/v1/fill/w_980,h_653,al_c,q_85/balcony.avif" alt="Balcony">
-    <img src="https://static.wixstatic.com/media/39d179_7071a4669afd495aa0db95d408448817~mv2.jpg/v1/fill/w_980,h_636,al_c,q_85/Bathroom%201_edited.jpg" alt="Bathroom">
-    <img src="https://static.wixstatic.com/media/39d179_16dd3aefce614cca9b76ed47b563450b~mv2.jpg/v1/fill/w_980,h_641,al_c,q_85/Family%20room%203_edited.jpg" alt="Double room">
-    <img src="https://static.wixstatic.com/media/39d179_c99dd0d9716c4cbabbefea52a1dfee88~mv2.jpg/v1/fill/w_980,h_638,al_c,q_85/Living%20room_edited.jpg" alt="Living room">
-    <img src="https://static.wixstatic.com/media/39d179_e0deedc6c63d452db23d0152f64a388f~mv2.jpg/v1/fill/w_980,h_646,al_c,q_85/Apartment%202_edited.jpg" alt="Apartment room">
-    <img src="https://static.wixstatic.com/media/39d179_1cc76a9a8a584485acacdd542de73dcd~mv2.jpg/v1/fill/w_980,h_641,al_c,q_85/Double%20room%20sofa_edited.jpg" alt="Apartment sofa">
-    <img src="https://static.wixstatic.com/media/39d179_92cc39c9e95849788943baba4076869e~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85/IMG_6481_edited.jpg" alt="Double room">
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_8dc35321d57a4b9698dae223401e3d45~mv2.jpg/v1/fill/w_980,h_639,al_c,q_85/IMG_6963_edited.jpg"
+      alt="Sole Mio Room"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_2a6e6fa2f0344f668d993b77a3a709db~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85/IMG_7934_edited.jpg"
+      alt="Sole Mio Living Area"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_764e25282d714d91bd2a50b90cfd4689~mv2.avif/v1/fill/w_980,h_653,al_c,q_85/balcony.avif"
+      alt="Sole Mio Balcony"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_7071a4669afd495aa0db95d408448817~mv2.jpg/v1/fill/w_980,h_636,al_c,q_85/Bathroom%201_edited.jpg"
+      alt="Sole Mio Bathroom"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_16dd3aefce614cca9b76ed47b563450b~mv2.jpg/v1/fill/w_980,h_641,al_c,q_85/Family%20room%203_edited.jpg"
+      alt="Sole Mio Family Room"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_c99dd0d9716c4cbabbefea52a1dfee88~mv2.jpg/v1/fill/w_980,h_638,al_c,q_85/Living%20room_edited.jpg"
+      alt="Sole Mio Living Room"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_e0deedc6c63d452db23d0152f64a388f~mv2.jpg/v1/fill/w_980,h_646,al_c,q_85/Apartment%202_edited.jpg"
+      alt="Sole Mio Apartment"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_1cc76a9a8a584485acacdd542de73dcd~mv2.jpg/v1/fill/w_980,h_641,al_c,q_85/Double%20room%20sofa_edited.jpg"
+      alt="Sole Mio Sofa"
+    >
+
+    <img
+      src="https://static.wixstatic.com/media/39d179_92cc39c9e95849788943baba4076869e~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85/IMG_6481_edited.jpg"
+      alt="Sole Mio Double Room"
+    >
+
   </div>
+
 </section>
+
 
 <section>
+
   <div class="section-head">
-    <div class="eyebrow" style="color:var(--sea)"><span data-lang="en">Amenities</span><span data-lang="de">Ausstattung</span></div>
-    <h2><span data-lang="en">Everything for a comfortable stay.</span><span data-lang="de">Alles für einen angenehmen Aufenthalt.</span></h2>
+
+    <div
+      class="eyebrow"
+      style="color:var(--sea)"
+    >
+      <span data-lang="en">Amenities</span>
+      <span data-lang="de">Ausstattung</span>
+    </div>
+
+    <h2>
+      <span data-lang="en">
+        Everything for a comfortable stay.
+      </span>
+
+      <span data-lang="de">
+        Alles für einen angenehmen Aufenthalt.
+      </span>
+    </h2>
+
   </div>
+
+
   <div class="amenities">
-    <div class="amenity">📶 <span data-lang="en">Free high-speed Wi-Fi</span><span data-lang="de">Kostenloses Highspeed-WLAN</span></div>
-    <div class="amenity">❄️ <span data-lang="en">Air conditioning</span><span data-lang="de">Klimaanlage</span></div>
-    <div class="amenity">🌅 <span data-lang="en">Balcony & view</span><span data-lang="de">Balkon & Aussicht</span></div>
-    <div class="amenity">🚿 <span data-lang="en">Private bathroom</span><span data-lang="de">Eigenes Badezimmer</span></div>
-    <div class="amenity">📺 Smart TV</div>
-    <div class="amenity">🅿️ <span data-lang="en">Free on-site parking</span><span data-lang="de">Kostenlose Parkplätze</span></div>
-    <div class="amenity">🧺 <span data-lang="en">Laundry €10</span><span data-lang="de">Wäscheservice 10 €</span></div>
-    <div class="amenity">🧹 <span data-lang="en">Daily housekeeping</span><span data-lang="de">Tägliche Reinigung</span></div>
+
+    <div class="amenity">
+      📶
+      <span data-lang="en">
+        Free high-speed Wi-Fi
+      </span>
+
+      <span data-lang="de">
+        Kostenloses Highspeed-WLAN
+      </span>
+    </div>
+
+
+    <div class="amenity">
+      ❄️
+      <span data-lang="en">
+        Air conditioning
+      </span>
+
+      <span data-lang="de">
+        Klimaanlage
+      </span>
+    </div>
+
+
+    <div class="amenity">
+      🌅
+      <span data-lang="en">
+        Balcony & view
+      </span>
+
+      <span data-lang="de">
+        Balkon & Aussicht
+      </span>
+    </div>
+
+
+    <div class="amenity">
+      🚿
+      <span data-lang="en">
+        Private bathroom
+      </span>
+
+      <span data-lang="de">
+        Eigenes Badezimmer
+      </span>
+    </div>
+
+
+    <div class="amenity">
+      📺 Smart TV
+    </div>
+
+
+    <div class="amenity">
+      🅿️
+      <span data-lang="en">
+        Free on-site parking
+      </span>
+
+      <span data-lang="de">
+        Kostenlose Parkplätze
+      </span>
+    </div>
+
+
+    <div class="amenity">
+      🧺
+      <span data-lang="en">
+        Laundry €10
+      </span>
+
+      <span data-lang="de">
+        Wäscheservice 10 €
+      </span>
+    </div>
+
+
+    <div class="amenity">
+      🧹
+      <span data-lang="en">
+        Daily housekeeping
+      </span>
+
+      <span data-lang="de">
+        Tägliche Reinigung
+      </span>
+    </div>
+
   </div>
+
 </section>
+
 
 <section class="reviews">
+
   <div class="section-head">
-    <div class="eyebrow" style="color:var(--sea)"><span data-lang="en">Guest experiences</span><span data-lang="de">Gästestimmen</span></div>
-    <h2><span data-lang="en">Guests love the hospitality.</span><span data-lang="de">Gäste lieben die Gastfreundschaft.</span></h2>
-  </div>
-  <div class="review-grid">
-    <div class="review"><div class="stars">★★★★★</div><p data-lang="en">“Very lovely family and the entire staff.”</p><p data-lang="de">„Sehr liebe Familie und ein tolles Team.“</p><b>Viera · Switzerland</b></div>
-    <div class="review"><div class="stars">★★★★★</div><p data-lang="en">“Great position, just minutes from the beach. Friendly hosts and very clean rooms.”</p><p data-lang="de">„Tolle Lage, nur wenige Minuten vom Strand. Freundliche Gastgeber und sehr saubere Zimmer.“</p><b>Delca · Romania</b></div>
-    <div class="review"><div class="stars">★★★★★</div><p data-lang="en">“The owner has a heart of gold. Very understanding and helpful.”</p><p data-lang="de">„Der Besitzer hat ein Herz aus Gold. Sehr verständnisvoll und hilfsbereit.“</p><b>Blerim · Switzerland</b></div>
-  </div>
-</section>
 
-<section id="book" class="booking">
-  <div>
-    <div class="eyebrow" style="color:var(--sea)"><span data-lang="en">Direct booking</span><span data-lang="de">Direktbuchung</span></div>
-    <h2><span data-lang="en">Send your booking request directly.</span><span data-lang="de">Buchungsanfrage direkt senden.</span></h2>
-    <p data-lang="en">No marketplace commission. Your request goes straight to Sole Mio via WhatsApp.</p>
-    <p data-lang="de">Keine Vermittlungsplattform. Deine Anfrage geht direkt per WhatsApp an Sole Mio.</p>
-    <div class="card">
-      <b>Sole Mio Apartments</b>
-      <p>Rugra #17, Ulcinj, Velika Plaža, 85360, Montenegro</p>
-      <p><b>Phone / WhatsApp:</b> +382 68 018 077</p>
-      <p><b>Email:</b> solemioulcinj@gmail.com</p>
+    <div
+      class="eyebrow"
+      style="color:var(--sea)"
+    >
+      <span data-lang="en">
+        Guest experiences
+      </span>
+
+      <span data-lang="de">
+        Gästestimmen
+      </span>
     </div>
+
+    <h2>
+      <span data-lang="en">
+        Guests love the hospitality.
+      </span>
+
+      <span data-lang="de">
+        Gäste lieben die Gastfreundschaft.
+      </span>
+    </h2>
+
   </div>
 
-  <form class="card" onsubmit="sendWhatsApp(event)">
-    <label><span data-lang="en">Room type</span><span data-lang="de">Zimmerart</span></label>
-    <select id="room">
-      <option>Single Room</option>
-      <option>Double Room</option>
-      <option>Apartment</option>
-    </select>
-    <label><span data-lang="en">Name</span><span data-lang="de">Name</span></label>
-    <input id="name" required>
-    <label>Check-in</label>
-    <input id="checkin" type="date" required>
-    <label>Check-out</label>
-    <input id="checkout" type="date" required>
-    <label><span data-lang="en">Guests</span><span data-lang="de">Gäste</span></label>
-    <select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
-    <label><span data-lang="en">Message</span><span data-lang="de">Nachricht</span></label>
-    <textarea id="message"></textarea>
-    <button class="btn" style="width:100%;margin-top:18px" type="submit">
-      <span data-lang="en">Send via WhatsApp</span><span data-lang="de">Über WhatsApp senden</span>
-    </button>
-  </form>
+
+  <div class="review-grid">
+
+    <div class="review">
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <p data-lang="en">
+        “Very lovely family and the entire staff.”
+      </p>
+
+      <p data-lang="de">
+        „Sehr liebe Familie und ein tolles Team.“
+      </p>
+
+      <b>
+        Viera · Switzerland
+      </b>
+
+    </div>
+
+
+    <div class="review">
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <p data-lang="en">
+        “Great position, just minutes from the beach.
+        Friendly hosts and very clean rooms.”
+      </p>
+
+      <p data-lang="de">
+        „Tolle Lage, nur wenige Minuten vom Strand.
+        Freundliche Gastgeber und sehr saubere Zimmer.“
+      </p>
+
+      <b>
+        Delca · Romania
+      </b>
+
+    </div>
+
+
+    <div class="review">
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <p data-lang="en">
+        “The owner has a heart of gold.
+        Very understanding and helpful.”
+      </p>
+
+      <p data-lang="de">
+        „Der Besitzer hat ein Herz aus Gold.
+        Sehr verständnisvoll und hilfsbereit.“
+      </p>
+
+      <b>
+        Blerim · Switzerland
+      </b>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+<section
+  id="book"
+  class="booking"
+>
+
+  <div>
+
+    <div
+      class="eyebrow"
+      style="color:var(--sea)"
+    >
+      <span data-lang="en">
+        Direct booking
+      </span>
+
+      <span data-lang="de">
+        Direktbuchung
+      </span>
+    </div>
+
+
+    <h2>
+
+      <span data-lang="en">
+        Send your booking request directly.
+      </span>
+
+      <span data-lang="de">
+        Buchungsanfrage direkt senden.
+      </span>
+
+    </h2>
+
+
+    <p data-lang="en">
+      Your booking request goes directly
+      to Sole Mio via WhatsApp.
+    </p>
+
+    <p data-lang="de">
+      Deine Buchungsanfrage geht direkt
+      per WhatsApp an Sole Mio.
+    </p>
+
+
+    <div class="card">
+
+      <b>
+        Sole Mio Apartments
+      </b>
+
+      <p>
+        Rugra #17,
+        Ulcinj,
+        Velika Plaža,
+        85360,
+        Montenegro
+      </p>
+
+
+      <p>
+        <b>WhatsApp:</b><br>
+
+        <a
+          href="https://wa.me/38268018077"
+          target="_blank"
+        >
+          +382 68 018 077
+        </a>
+      </p>
+
+
+      <p>
+        <b>
+          <span data-lang="en">Phone:</span>
+          <span data-lang="de">Telefon:</span>
+        </b>
+        <br>
+
+        <a href="tel:+14088073001">
+          +1 408-807-3001
+        </a>
+      </p>
+
+
+      <p>
+        <b>Email:</b><br>
+
+        <a href="mailto:solemioulcinj@gmail.com">
+          solemioulcinj@gmail.com
+        </a>
+      </p>
+
+
+      <div class="actions">
+
+        <a
+          class="btn"
+          href="https://wa.me/38268018077"
+          target="_blank"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          class="btn dark"
+          href="tel:+14088073001"
+        >
+          <span data-lang="en">
+            Call
+          </span>
+
+          <span data-lang="de">
+            Anrufen
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <form
+    class="card"
+    onsubmit="sendWhatsApp(event)"
+  >
+
+    <label>
+      <span data-lang="en">
+        Room type
+      </span>
+
+      <span data-lang="de">
+        Zimmerart
+      </span>
+    </label>
+
+
+    <select id="room">
+
+      <option>
+        Single Room
+      </option>
+
+      <option>
+        Double Room
+      </option>
+
+      <option>
+        Apartment
+      </option>
+
+    </select>
+
+
+    <label>
+      <span data-lang="en">Name</span>
+      <span data-lang="de">Name</span>
+    </label>
+
+    <input
+      id="name"
+      required
+    >
+
+
+    <label>
+      Check-in
+    </label>
+
+    <input
+      id="checkin"
+      type="date"
+      required
+    >
+
+
+    <label>
+      Check-out
+    </label>
+
+    <input
+      id="checkout"
+      type="date"
+      required
+    >
+
+
+    <label>
+      <span data-lang="en">
+        Guests
+      </span>
+
+      <span data-lang="de">
+        Gäste
+      </span>
+    </label>
+
+
+    <select id="guests">
+
+      <option>1</option>
+
+      <option selected>
+        2
+      </option>
+
+      <option>3</option>
+
+      <option>4</option>
+
+      <option>5</option>
+
+      <option>6</option>
+
+    </select>
+
+
+    <label>
+
+      <span data-lang="en">
+        Message
+      </span>
+
+      <span data-lang="de">
+        Nachricht
+      </span>
+
+    </label>
+
+
+    <textarea id="message"></textarea>
+
+
+    <button
+      class="btn"
+      style="width:100%;margin-top:18px"
+      type="submit"
+    >
+
+      <span data-lang="en">
+        Send via WhatsApp
+      </span>
+
+      <span data-lang="de">
+        Über WhatsApp senden
+      </span>
+
+    </button>
+
+  </form>
+
+</section>
+
 
 <footer>
-  <div>©️ 2026 Sole Mio Apartments</div>
 
   <div>
-    <a href="legal.html" style="color:white;">Legal Notice / Impressum</a>
-    ·
-    <a href="privacy.html" style="color:white;">Privacy / Datenschutz</a>
-    ·
-    <a href="booking-terms.html" style="color:white;">Booking Terms / Buchungsbedingungen</a>
+    ©️ 2026 Sole Mio Apartments
   </div>
+
+
+  <div>
+
+    <a
+      href="legal.html"
+      style="color:white;"
+    >
+      Legal Notice / Impressum
+    </a>
+
+    ·
+
+    <a
+      href="privacy.html"
+      style="color:white;"
+    >
+      Privacy / Datenschutz
+    </a>
+
+    ·
+
+    <a
+      href="booking-terms.html"
+      style="color:white;"
+    >
+      Booking Terms / Buchungsbedingungen
+    </a>
+
+  </div>
+
 </footer>
 
+
 <script>
-function toggleLang(){
+
+function toggleLang() {
+
   document.body.classList.toggle('de');
-  document.documentElement.lang = document.body.classList.contains('de') ? 'de' : 'en';
-  document.getElementById('langBtn').textContent = document.body.classList.contains('de') ? 'EN' : 'DE';
+
+  document.documentElement.lang =
+    document.body.classList.contains('de')
+      ? 'de'
+      : 'en';
+
+  document.getElementById('langBtn').textContent =
+    document.body.classList.contains('de')
+      ? 'EN'
+      : 'DE';
 }
-function setRoom(name){
-  document.getElementById('room').value=name;
+
+
+function setRoom(name) {
+
+  document.getElementById('room').value = name;
+
 }
-function sendWhatsApp(e){
+
+
+function sendWhatsApp(e) {
+
   e.preventDefault();
-  const room=document.getElementById('room').value;
-  const name=document.getElementById('name').value;
-  const ci=document.getElementById('checkin').value;
-  const co=document.getElementById('checkout').value;
-  const guests=document.getElementById('guests').value;
-  const message=document.getElementById('message').value;
-  const german=document.body.classList.contains('de');
-  const text=german
-   ? `Hallo Sole Mio, ich möchte direkt buchen.%0A%0AZimmer: ${encodeURIComponent(room)}%0AName: ${encodeURIComponent(name)}%0ACheck-in: ${ci}%0ACheck-out: ${co}%0AGäste: ${guests}%0ANachricht: ${encodeURIComponent(message)}`
-   : `Hello Sole Mio, I would like to book directly.%0A%0ARoom: ${encodeURIComponent(room)}%0AName: ${encodeURIComponent(name)}%0ACheck-in: ${ci}%0ACheck-out: ${co}%0AGuests: ${guests}%0AMessage: ${encodeURIComponent(message)}`;
-  window.open(`https://wa.me/38268018077?text=${text}`,'_blank');
+
+
+  const room =
+    document.getElementById('room').value;
+
+  const name =
+    document.getElementById('name').value;
+
+  const ci =
+    document.getElementById('checkin').value;
+
+  const co =
+    document.getElementById('checkout').value;
+
+  const guests =
+    document.getElementById('guests').value;
+
+  const message =
+    document.getElementById('message').value;
+
+
+  const german =
+    document.body.classList.contains('de');
+
+
+  const text = german
+
+    ? `Hallo Sole Mio, ich möchte direkt buchen.
+
+Zimmer: ${room}
+Name: ${name}
+Check-in: ${ci}
+Check-out: ${co}
+Gäste: ${guests}
+Nachricht: ${message}`
+
+    : `Hello Sole Mio, I would like to book directly.
+
+Room: ${room}
+Name: ${name}
+Check-in: ${ci}
+Check-out: ${co}
+Guests: ${guests}
+Message: ${message}`;
+
+
+  const whatsappURL =
+    `https://wa.me/38268018077?text=${encodeURIComponent(text)}`;
+
+
+  window.open(
+    whatsappURL,
+    '_blank'
+  );
+
 }
+
 </script>
+
 </body>
 </html>
